@@ -1,14 +1,7 @@
-const boxEl = document.querySelector('.box');
+const boxEls = document.querySelectorAll('.box');
 
-console.log(boxEl);
-
-boxEl.addEventListener('click', function () {
-  console.log('Click~!');
-  boxEl.classList.add('active');
-  let isContains = boxEl.classList.contains('active');
-  console.log(isContains);
-
-  boxEl.classList.remove('active');
-  isContains = boxEl.classList.contains('active');
-  console.log(isContains);
+boxEls.forEach((boxEl, index) => {
+  boxEl.classList.add(`order-${index + 1}`);
+  boxEl.textContent = `new content ${index}`;
+  console.log(index, boxEl);
 });
