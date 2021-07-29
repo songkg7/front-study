@@ -1,14 +1,14 @@
-const heropy = {
-  name: 'heropy',
-  age: 85,
-  getName() {
-    return this.name;
-  },
-  setName(name) {
-    this.name = name;
-  },
-};
+const boxEl = document.querySelector('.box');
 
-console.log(heropy.getName());
-console.log(heropy.setName('haril'));
-console.log(heropy.getName());
+console.log(boxEl);
+
+boxEl.addEventListener('click', function () {
+  console.log('Click~!');
+  boxEl.classList.add('active');
+  let isContains = boxEl.classList.contains('active');
+  console.log(isContains);
+
+  boxEl.classList.remove('active');
+  isContains = boxEl.classList.contains('active');
+  console.log(isContains);
+});
