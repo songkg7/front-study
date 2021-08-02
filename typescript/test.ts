@@ -1,5 +1,2 @@
-let isDone: boolean | string = false;
-isDone = true;
-isDone = "test";
-
-console.log(typeof isDone);
+let union: string | null = null;
+union = "Haril";
