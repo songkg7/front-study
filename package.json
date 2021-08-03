@@ -1,0 +1,24 @@
+{
+  "name": "skill-test",
+  "version": "1.0.0",
+  "description": "다양한 프로그래밍 언어들을 테스트해보는 리포지토리입니다.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/songkg7/test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/songkg7/test/issues"
+  },
+  "homepage": "https://github.com/songkg7/test#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
